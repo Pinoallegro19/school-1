@@ -12,7 +12,7 @@ void scambia_int(int *ptra, int *ptrb)	// var 1 --> var 2
 }
 
 
-void bubble_sort(int *vet, int n)	// da più piccolo a più grande
+void bubble_sort(int *vet, int n)	// da piÃ¹ piccolo a piÃ¹ grande con 2 for
 {
 	int i, scambiato, j, temp;
 	scambiato= 1;
