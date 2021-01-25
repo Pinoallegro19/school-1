@@ -58,6 +58,14 @@ create table gruppo (
     nome varchar2(100) not null,
     anno_fondazione number(4,0) not null,
     primary key(codice))
+ 
+create table album (
+    codice integer not null,
+    titolo varchar2(100) not null,
+    nome integer not null,
+    codice_gruppo integer not null,
+    primary key(codice), 
+    foreign key (codice_gruppo) references gruppo(codice)) 
 
 /*aggiungere chiave primaria*/
 alter table gruppo add primary key(codice)
